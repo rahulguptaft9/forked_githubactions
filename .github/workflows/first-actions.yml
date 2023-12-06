@@ -1,5 +1,11 @@
 name: My First GitHub Actions
 
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch name'
+        required: true
 
 jobs:
   build:
