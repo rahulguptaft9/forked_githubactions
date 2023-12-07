@@ -1,7 +1,11 @@
 name: My First GitHub Actions Rahul Gupta Testing
-
+run-name: Rahul_Test_${{inputs.guid}}
 on:
   workflow_dispatch:
+     inputs:
+       guid:
+        type: string
+        default: "N/A"
 
 jobs:
   build:
