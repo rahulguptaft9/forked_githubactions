@@ -1,4 +1,4 @@
-name: My First GitHub Actions Rahul
+name: My First GitHub Actions Rahul Gupta
 
 on:
   workflow_dispatch:
