@@ -1,5 +1,5 @@
 name: Simple
-#run-name: Simple Input Workflow | 
+run-name: Rahul_Simple_${{inputs.guid}}
 on:
   workflow_dispatch:
     inputs:
