@@ -1,5 +1,5 @@
 name: Simple
-run-name: Simple Input Workflow | 
+#run-name: Simple Input Workflow | 
 on:
   workflow_dispatch:
     inputs:
