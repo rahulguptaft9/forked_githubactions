@@ -1,5 +1,5 @@
 name: Multiple
-run-name: Rahul_Multiple_${{inputs.guid}}
+run-name: Multiple_${{inputs.guid}}
 on:
   workflow_dispatch:
     inputs:
