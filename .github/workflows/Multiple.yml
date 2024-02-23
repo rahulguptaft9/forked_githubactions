@@ -9,6 +9,9 @@ on:
       age:
         description: 'Enter your age'
         required: true
+      guid:
+        type: string
+        default: "N/A"
 
 jobs:
   multiple-inputs-job:
