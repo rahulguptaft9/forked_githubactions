@@ -1,0 +1,14 @@
+name: Simple
+run-name: Simple Input Workflow | 
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Enter a message'
+        required: true
+jobs:
+  simple-input-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display Message
+        run: echo "${{ github.event.inputs.message }}"
