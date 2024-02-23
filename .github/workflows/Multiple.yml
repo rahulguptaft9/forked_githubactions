@@ -1,0 +1,20 @@
+name: Multiple
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Enter your name'
+        required: true
+      age:
+        description: 'Enter your age'
+        required: true
+
+jobs:
+  multiple-inputs-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display Information
+        run: |
+          echo "Name: ${{ github.event.inputs.name }}"
+          echo "Age: ${{ github.event.inputs.age }}"
