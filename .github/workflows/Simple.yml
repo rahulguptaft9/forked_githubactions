@@ -6,6 +6,9 @@ on:
       message:
         description: 'Enter a message'
         required: true
+      guid:
+        type: string
+        default: "N/A"
 jobs:
   simple-input-job:
     runs-on: ubuntu-latest
