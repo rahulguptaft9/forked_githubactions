@@ -14,4 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Display Message
-        run: echo "${{ github.event.inputs.message }}"
+        run: |
+         SUMMARY=$'# Testing Job Summary\n## Second Level Heading\nHello GitHub'
+         echo "$SUMMARY" >> $GITHUB_STEP_SUMMARY
